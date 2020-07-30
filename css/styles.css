@@ -443,6 +443,7 @@ ul {
 
 .footer-wraper {
   display: flex;
+  /* justify-content: space-between; */
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -485,8 +486,7 @@ ul {
   color: var(--backgraoud-color);
   margin-bottom: 20px;
 }
-
-.footer-social-list {
+.footer-b .footer-social-list {
   display: flex;
   margin-right: 94px;
 }
@@ -495,9 +495,50 @@ ul {
   margin-right: 10px;
 }
 
+.footer-social-link {
+  margin-right: 94px;
+}
+
+.footer-social-link .comand-link {
+  padding-left: 0px;
+}
+
 .footer-label-link:hover,
 .footer-label-link:focus {
   color: var(--accent-color);
+}
+
+.footer-btn {
+  display: block;
+  width: 570px;
+}
+
+.footer-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  fill: #fff;
+  position: relative;
+  transform: translateX(10px);
+}
+.footer-btn-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  padding: 10px 28px 10px 29px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  color: #ffffff;
+  background-color: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-color: #2196f3;
+  border-radius: 4px;
 }
 
 /* Portfolio.html */
@@ -536,6 +577,7 @@ ul {
 }
 
 .main-btn {
+  display: block;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -576,7 +618,7 @@ ul {
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
     0px 1px 1px rgba(0, 0, 0, 0.12);
 }
-.main-jobs-wrapper:hover .jobs-titel-text {
+.main-jobs-item:hover .jobs-titel-text {
   transform: translateY(0);
 }
 
