@@ -98,6 +98,7 @@ ul {
 }
 .navigation-list-link .navigation-list-link,
 .header-link {
+  /* position: relative; */
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -112,15 +113,20 @@ ul {
   color: var(--accent-color);
 }
 
+.navigation-list-item {
+  position: relative;
+}
 .active::after {
   content: '';
   display: block;
+  position: absolute;
+  transform: translateY(29px);
+
   width: 100%;
   height: 4px;
   background-color: #2196f3;
   border-radius: 2px;
   margin: auto;
-  margin-top: 28px;
   color: #2196f3;
 }
 
@@ -129,6 +135,7 @@ ul {
 }
 .navigation-list-link {
   padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .nav-img {
@@ -138,6 +145,10 @@ ul {
 
 .nav-img:hover {
   fill: var(--accent-color);
+}
+
+.header {
+  border: 1px solid #ececec;
 }
 
 .header .container {
@@ -458,9 +469,11 @@ ul {
 
 .footer-logo {
   margin-bottom: 20px;
+  color: #fff;
 }
 
 .footer-adress {
+  font-style: normal;
   margin-bottom: 9px;
 }
 
@@ -528,7 +541,7 @@ ul {
   justify-content: center;
   align-items: center;
   width: 200px;
-  padding: 10px 28px 10px 29px;
+  padding: 9px 28px 8px 29px;
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -544,7 +557,7 @@ ul {
 /* Portfolio.html */
 
 .jobs.container {
-  padding-top: 94px;
+  padding-top: 93px;
   padding-bottom: 94px;
 }
 
@@ -591,6 +604,7 @@ ul {
   justify-content: center;
   align-items: center;
   background: #f5f4fa;
+  border-color: #f5f4fa;
   border-radius: 4px;
 }
 
